@@ -323,7 +323,7 @@ h5{
     }
     header{
         padding:20px 0;
-        height: 120px;
+        height: 145px;
     }
     .logo{
         padding: 0; 
@@ -340,7 +340,7 @@ h5{
         display:none;
         position:absolute;
         left:0;
-        top:120px;
+        top:145px;
         background-color:rgb(53, 26, 1);
         width: 100%;
         margin: 0;
@@ -380,6 +380,12 @@ h5{
     label{padding:5px 0}
     #logo{font-size:20px}
     nav{top:47px}
+    .btn{
+        display: none;
+    }
+    .btn-default{
+        display: block;
+    }
     }
 @media (min-width: 1200px) {
     .container{max-width:1140px}
