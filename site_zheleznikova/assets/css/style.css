@@ -383,6 +383,9 @@ h5{
     .btn{
         display: none;
     }
+    .btn-default{
+        display: block;
+    }
     }
 @media (min-width: 1200px) {
     .container{max-width:1140px}
