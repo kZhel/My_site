@@ -380,12 +380,6 @@ h5{
     label{padding:5px 0}
     #logo{font-size:20px}
     nav{top:47px}
-    .btn{
-        display: none;
-    }
-    .btn-default{
-        display: block;
-    }
     }
 @media (min-width: 1200px) {
     .container{max-width:1140px}
