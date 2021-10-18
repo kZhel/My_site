@@ -322,11 +322,12 @@ h5{
         font-size: 15px;
     }
     header{
-        padding:20px 0
+        padding:20px 0;
+        height: 120px;
     }
     .logo{
         padding: 0; 
-        margin: 0;
+        margin: -20px;
     }
     input[type=checkbox]{position:relative;top:0px;left:0px;background:none}
     label{float:right;
@@ -339,7 +340,7 @@ h5{
         display:none;
         position:absolute;
         left:0;
-        top:145px;
+        top:120px;
         background-color:rgb(53, 26, 1);
         width: 100%;
         margin: 0;
@@ -369,17 +370,19 @@ h5{
         margin-left: 0px;
     }
     .btn-default{
-        margin-left: 25%;
+        margin-left: 0;
     }
     .single_service_area{
         margin-top: 40px;
     }
     }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 420px) {
     label{padding:5px 0}
     #logo{font-size:20px}
     nav{top:47px}
-    
+    .btn{
+        display: none;
+    }
     }
 @media (min-width: 1200px) {
     .container{max-width:1140px}
