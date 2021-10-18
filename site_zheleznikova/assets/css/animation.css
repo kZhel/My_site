@@ -1,0 +1,81 @@
+body{
+    font-size: 15pt;
+	line-height: 1.85em;
+	font-weight: 300;
+  }
+  .flexcontainer{
+    background-color:transparent;
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .gun{
+    border: none;
+    position: relative;
+    display: block;
+    background:url(../images/png/gun6.png);
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    transform: rotate(45deg);
+    transition: 0.1s linear;
+    overflow: visible;
+  }
+  
+  .text1, .text2{
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    top:0px;
+    margin-left: 0px;
+    display: none;
+  }
+
+ 
+  .bullet{
+    position: relative;
+    display: block;
+    background: url(../images/png/gun5.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 0%;
+    transition: 0.1s linear;
+  }
+
+  .gun:hover{
+    transform: rotate(0deg);
+    transition: 0.1s linear;
+  }
+  .gun:hover .text1{
+    display: block;
+  }
+
+  .gun:active .text2{
+    display: block;
+    }
+    .gun:active .text1{
+    display: none;
+    }
+   
+  .gun:active{
+    background: url(../images/png/gun3.png);
+    background-repeat: no-repeat;
+    animation: shoot 0.3s infinite alternate;
+   }
+   @keyframes shoot {
+    from { transform: translate(0px, -5px); }
+    to { transform: translate(0px, 5px); }
+    }
+    .gun:active .bullet{
+    opacity: 100%;
+    animation: fly 1s linear;
+    }
+    @keyframes fly {
+    from { transform: translateX(0em); }
+    to { transform: translateX(200%); }
+    }
